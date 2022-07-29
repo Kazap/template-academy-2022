@@ -1,0 +1,145 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+  min-height: 100vh;
+  background-color: #2C2C2E;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+#sideBarWrapper {
+  max-width: 324px;
+  width: 100%;
+}
+
+#contentWrapper {
+  padding: 36px;
+  background-color: #2C2C2E;
+  max-height: 100vh;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+.mainCard img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.mainCard img::after {
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(270deg, #1C1C1E 50.52%, rgba(28, 28, 30, 0) 100%);
+}
+
+h6 {
+  text-align: center;
+  font-weight: 300 !important;
+  margin: 1rem !important;
+}
+
+form .form-group>label,
+form .list-group-item,
+form .form-control:focus {
+  color: #C7C7CC;
+}
+
+form .form-group>input:focus {
+  border-color: #C7C7CC;
+}
+
+form .form-group>input,
+form .form-group>textarea,
+form .form-group>select,
+form .list-group-item {
+  color: #636366;
+  border: 1px solid #636366;
+}
+
+form .form-check-input:checked {
+  border-color: #FF375F;
+  background-color: #FF375F;
+}
+
+.nav-pills .nav-item .nav-link.active,
+.primary {
+  color: #F2F2F7 !important;
+  background-color: #FF375F !important;
+}
+
+.cancel {
+  color: #2C2C2E !important;
+  background-color: #C7C7CC !important;
+}
+
+tr {
+  color: #C7C7CC !important;
+  border-color: #1C1C1E !important;
+}
+
+tr>td {
+  font-weight: 300;
+}
+
+td img {
+  max-width: 12px;
+  margin: 4px;
+}
+
+.dark-gray-6 {
+  background-color: #1C1C1E !important;
+}
+
+.dark-gray-5 {
+  background-color: #2C2C2E !important;
+}
+
+.dark-gray-4 {
+  background-color: #3A3A3C !important;
+}
+
+.dark-gray-3 {
+  background-color: #48484A !important;
+}
+
+.dark-gray-2 {
+  background-color: #636366 !important;
+}
+
+.light-gray-6 {
+  background-color: #F2F2F7 !important;
+}
+
+.light-gray-5 {
+  background-color: #E5E5EA !important;
+}
+
+.light-gray-4 {
+  background-color: #D1D1D6 !important;
+}
+
+.light-gray-3 {
+  background-color: #C7C7CC !important;
+}
